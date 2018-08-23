@@ -1,0 +1,16 @@
+// Global variables
+//
+// Base font styles for headings and links.
+
+// Breakpoints for include media mixin
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 980px,
+  'widescreen': 1200px
+);
+
+$white: #fff;
+$regular: #403d4b; 
+$active: #00e1d1;
+$grey: #c2c2c2;

@@ -1,0 +1,84 @@
+.header {
+	color: $white;
+	height: 100vh;
+	min-height: 650px;
+	@include bgc-option;
+	z-index: 5;
+	width: 100%;
+	p {
+		color: $white;
+	}
+	background-image: url('../../../assets/images/bgc1.jpg');
+	.wrap {
+		@include wrap;
+	}
+	&__logo {
+		margin-top: 26px;
+	}
+	&__nav {
+		margin-top: 33px;
+		ul>li {
+			padding-right: 24px;
+			display: inline-block;
+		}
+	}
+	&__h {
+		margin-top: 180px;
+		span {
+			@include span; 
+			background-color: $active;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		button {
+			margin-top: 45px;
+		}
+	}
+	&__buttons {
+		margin-top: 120px;
+		span {
+			display: inline-block;
+			border-radius: 50%;
+			background-color:  transparent;
+			width: 10px;
+			height: 10px;
+			border: 1px solid $grey;
+			cursor: pointer;
+			&:first-child {
+				background-color: $active;
+			}
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&__nav {
+			display: none;
+		}
+		&__buttons {
+			margin-top: 60px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		&__logo {
+			h2 {
+				font-size: 18px;
+			}
+		}
+		&__h {
+			h1{
+				font-size: 19px;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+		&__buttons {
+			margin-top: 60px;
+		}
+	}
+}
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Hammersmith One', sans-serif;
+// font-family: 'Playfair Display', serif;
